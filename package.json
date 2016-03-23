@@ -66,12 +66,8 @@
     "directories": {
       "dist": "dist"
     },
-    "dependencies": {
-      "aurelia-binding-functions": "^0.1.0"
-    },
+    "dependencies": {},
     "devDependencies": {}
   },
-  "dependencies": {
-    "aurelia-binding-functions": "^0.1.0"
-  }
+  "dependencies": {}
 }

@@ -4,10 +4,10 @@ An Aurelia plugin that allows you to bind to Promises.
 
 ## How to install this plugin?
 
-1. In your project install the plugin and `rxjs` via `jspm` with following command
+1. In your project install the plugin and `aurelia-binding-functions` via `jspm` with following command
 
   ```shell
-  jspm install npm:aurelia-async-binding-function
+  jspm install npm:aurelia-async-binding-function npm:aurelia-binding-functions
   ```
 2. Make Aurelia load the plugin by adding the following line to the `configure` function in the `main.js` file of your `src` folder
 
@@ -17,6 +17,7 @@ An Aurelia plugin that allows you to bind to Promises.
         .standardConfiguration()
         .developmentLogging();
 
+  +   aurelia.use.plugin('aurelia-binding-functions');
   +   aurelia.use.plugin('aurelia-async-binding-function');
 
       aurelia.start().then(a => a.setRoot());
