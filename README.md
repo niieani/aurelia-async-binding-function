@@ -31,7 +31,7 @@ View:
 
 ```html
 <h1>
-  ${async(myPromise)}
+  ${ @async(myPromise) }
 </h1>
 ```
 

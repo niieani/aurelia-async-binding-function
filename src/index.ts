@@ -5,7 +5,7 @@ export function configure(frameworkConfig: FrameworkConfiguration) {
   const viewResources = frameworkConfig.aurelia.resources
   const bindingFunctionInstance = frameworkConfig.container.get(AsyncBindingFunction)
   if (typeof viewResources.registerBindingFunction === 'function') {
-    viewResources.registerBindingFunction('async', bindingFunctionInstance)
+    viewResources.registerBindingFunction('@async', bindingFunctionInstance)
   } else {
     throw new Error('You need to load the aurelia-binding-functions plugin before aurelia-async-binding-function.')
   }
